@@ -59,7 +59,8 @@ document.getElementById('search').addEventListener('click',function(){
       document.getElementById('temperature').innerText = data.main.temp;
       document.getElementById('weather-info').innerText = data.weather[0].main;
       document.getElementById('image-icon').setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
-      
+      document.getElementById('city').value = '';
+
   }
 
 </script>
